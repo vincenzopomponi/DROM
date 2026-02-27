@@ -1,12 +1,14 @@
 # DROM: Multi-task Robotic Manipulation via Diffusion Models
 
 # Abstract:
-Day by day, robots are asked to solve various tasks in diverse domains.
-The advent of recent Generative AI techniques is tackling this request with success.
-Despite this, it demands a tremendous amount of data and training resources.
-In this work, we propose DROM (Diffusion for RObotic Manipulation) to solve different tasks from the domestic and industrial domains, reducing the need for enormous demonstrative datasets.
-We leverage Dynamic Movement Primitives' capabilities of generalizing the shape of a trajectory to create a dataset from a single expert demonstration for each task and then train a single Diffusion Model to solve all the tasks.
-Results show that the proposed method is capable of generating trajectories for solving all the tasks with a very high success rate (76\% for joint space trajectories and 92\% for Cartesian space trajectories), generalizing on a vast workspace (0.6 m and 1.1 m on the X and Y axes respectively), using a single demonstration for each of the considered tasks.
+Learning data-efficient and generalizable manipulation policies remains a central challenge in robotics, particularly for multi-skill and long-horizon tasks.
+We present DROM, a data-efficient, language-guided, multi-skill diffusion-based framework for robotic manipulation. 
+DROM leverages Dynamic Movement Primitives (DMPs) to augment a single human demonstration per skill, generating a compact yet expressive multi-skill dataset used to train a unified diffusion policy. 
+Extending the MPD formulation, we introduce a single diffusion model capable of handling multiple manipulation primitives, conditioned through a language encoder that maps diverse operator prompts to the corresponding skill. 
+For long-horizon objectives, a high-level language model decomposes instructions into ordered primitives, which condition the diffusion model via cross-attention to generate skill-consistent trajectories while preserving real-time control. 
+We validate DROM on two robotic platforms, a Franka Emika Panda and a FANUC CRX25ia, as well as in MuJoCo simulation, demonstrating robust multi-skill generalization and high task success with minimal demonstration requirements.
+
+![DynaMimicGen Logo](DROM_framework.jpg)
 
 # Installation
 
