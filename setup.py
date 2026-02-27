@@ -23,7 +23,7 @@ setup(
     ],
     author='Vincenzo Pomponi',
     author_email='vincenzo.pomponi@supsi.ch',
-    description='DROM: Diffusion for RObotics Manipulation',
-    url="https://github.com/vincenzopomponi/DROM",
+    description='DROM: Multi-Skill Robotic Manipulation from Single Demonstration via Language-Guided Diffusion',
+    url="hhttps://github.com/vincenzopomponi/DROM_IROS",
     python_requires='>=3.8',
 )
