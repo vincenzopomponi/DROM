@@ -16,33 +16,12 @@ We validate DROM on two robotic platforms, a Franka Emika Panda and a FANUC CRX2
 source install.sh
 ```
 
-# Train DROM
+# Train Diffusion Model
 ```bash
 python drom/scripts/train_drom.py --config drom/configs/low_dim/drom.json
 ```
 
-# Test DROM
+# Test Diffusion Model
 ```bash
 python drom/scripts/test_drom.py --directory \<directory\> --validations 30 --seed 30 --render
-```
-
-# Print HDF5 file contents
-```bash
-python drom/scripts/print_hdf5_dataset.py --directory <dir-path>
-```
-
-# Merge datasets
-This script merges all datasets in the specified folder into a single dataset. It creates a new folder named ‘dmp’ and saves the merged dataset file inside it.
-```bash
-python drom/scripts/merge_dataset.py --directory <dir-name>
-```
-
-# Delete a demo(s) within a HDF5 file
-```bash
-python drom/scripts/delete_demos.py --file <path-file> --demo demo_32 --renumber
-```
-
-# Plot the dataset
-```bash
-python drom/scripts/plot_dataset.py --directory <dir-name>
 ```
