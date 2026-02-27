@@ -1,4 +1,4 @@
-# DROM: Multi-task Robotic Manipulation via Diffusion Models
+# DROM: Multi-Skill Robotic Manipulation from Single Demonstration via Language-Guided Diffusion
 
 # Abstract:
 Learning data-efficient and generalizable manipulation policies remains a central challenge in robotics, particularly for multi-skill and long-horizon tasks.
@@ -8,7 +8,7 @@ Extending the MPD formulation, we introduce a single diffusion model capable of 
 For long-horizon objectives, a high-level language model decomposes instructions into ordered primitives, which condition the diffusion model via cross-attention to generate skill-consistent trajectories while preserving real-time control. 
 We validate DROM on two robotic platforms, a Franka Emika Panda and a FANUC CRX25ia, as well as in MuJoCo simulation, demonstrating robust multi-skill generalization and high task success with minimal demonstration requirements.
 
-![DynaMimicGen Logo](DROM_framework.jpg)
+![DROM_Logo](DROM_framework.jpg)
 
 # Installation
 
