@@ -24,6 +24,7 @@ setup(
     author='Vincenzo Pomponi',
     author_email='vincenzo.pomponi@supsi.ch',
     description='DROM: Multi-Skill Robotic Manipulation from Single Demonstration via Language-Guided Diffusion',
-    url="hhttps://github.com/vincenzopomponi/DROM_IROS",
+    url="https://github.com/vincenzopomponi/DROM",
+    license="Apache-2.0",
     python_requires='>=3.8',
 )
